@@ -216,7 +216,7 @@ html, body {
 }
 
 .pic-fb1 {
-    background-image: url('portfolio/fullbody.jpeg');
+    background-image: url('fullbody.jpeg');
     background-position-y: 25%;
 }
 
@@ -230,19 +230,19 @@ html, body {
 }
 
 .picWide-e1 {
-    background-image: url('portfolio/treeoflife.png');
+    background-image: url('treeoflife.png');
 }
 
 .picWide-e2 {
-    background-image: url('portfolio/background.png');
+    background-image: url('background.png');
 }
 
 .picWide-e3 {
-    background-image: url('portfolio/buildings.png');
+    background-image: url('buildings.png');
 }
 
 .picWide-c1 {
-    background-image: url('portfolio/recoloredmultiple.png');
+    background-image: url('recoloredmultiple.png');
 }
 
 .pic-c2 {
@@ -367,7 +367,7 @@ html, body {
 
 #Portfolio {
     height: 120vh;
-    background-image: linear-gradient(rgba(13, 1, 7, 0.475), rgba(247, 169, 218, 0.496)), url("portfolio/treeoflife.png");
+    background-image: linear-gradient(rgba(13, 1, 7, 0.475), rgba(247, 169, 218, 0.496)), url("treeoflife.png");
     background-position: bottom center;
 }
 
