@@ -31,5 +31,6 @@ function changeSlide(direction) {
     else if (index >= length) {
         index = 0;
     }
+    console.log(map[choice][index]);
     slideshow.src = map[choice][index];
 }
