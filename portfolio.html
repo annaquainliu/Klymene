@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href="css3.css" />
+    <link rel = "stylesheet" type = "text/css" href="navbar.css"/>
+    <title>Portfolio & Contacts</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+</head>
+<body>
+    <div id = "titleBox" style="text-align:center">
+        <a target="_blank" href = "https://www.artstation.com/klymenearts"><img class = "contacts"src = "portfolio/artstation-logo.png" style = "padding: 1.2vw"></a>
+        <a target="_blank" href = "https://www.reddit.com/user/klymenearts/submitted/"><img class = "contacts" src = "portfolio/reddit-logo-16.png" style = "padding-top: 1.2vw;"></a>
+        <a target="_blank" href = "https://twitter.com/klymene13"><img class = "contacts" src = "portfolio/Twitter_Logo_new.png" style = "padding:1.2vw;"></a>
+        <a target="_blank" href = "https://www.instagram.com/klymenearts"><img class = "contacts" src = "Instagram_logo_2022.svg.png" style = "padding-top:1.2vw;"></a>
+    </div>
+    <div id = "Portfolio">
+        <div id = "categoriesBar">
+            <div id = "barPosition">
+                <span class = "category" onClick = "window.location.href= 'index.html';"><span class = "tab"></span><strong>ABOUT ME</strong><span class = "tab"></span></span>
+                <span class = "category" onClick= "window.location.href='art.html';"><span class = "tab"></span><strong>POPULAR</strong><span class = "tab"></span></span>
+                <span class = "category" onClick= "window.location.href='commissions.html';"><span class = "tab"></span><strong>COMMISSIONS</strong><span class = "tab"></span></span>
+                <span class = "category" onClick= "window.location.href='portfolio.html';"><span class = "tab"></span><strong>PORTFOLIO</strong><span class = "tab"></span></span>
+            </div>
+            <div id = "barShadow"></div>
+        </div>
+        <br/>
+        <div class = "title" style = "position: relative;  left: 3vw; width: 20vw;">PORTFOLIO</div>
+        <br/>
+        <div style = "display: inline-block">
+            <div id = "dropdownMenu">
+                <div id = "charDesign" class = "category category-c1" onclick = "changeCategory('charDesign')">CHARACTER DESIGN</div>
+                <div id = "env" class = "category category-c1" onclick = "changeCategory('env')">ENVIRONMENTS</div>
+                <div id = "props" class = "category category-c1" onclick = "changeCategory('props')">PROPS</div>
+                <div id = "visdev" class = "category category-c1" onclick = "changeCategory('visdev')">VISDEV</div>
+                <div id = "3d" class = "category category-c1" onclick = "changeCategory('3d')">3D MODELING</div>
+            </div>
+        </div>
+        <div id = "slideshowBackground">
+            <img id = "backwardsArrow" src = "slideshowarrow.png" onclick = "changeSlide(false)">
+            <img id = "slideshow">
+            <img id = "forwardArrow" src = "slideshowarrow.png" onclick = "changeSlide(true)">
+        </div>
+        <script src = "portfolio.js"></script>
+    </div>
+</body>
+</html>
