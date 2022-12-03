@@ -7,7 +7,7 @@
     position:relative;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     z-index: 1;
-    background-image: url("klymenearts.png"), linear-gradient(rgba(81, 125, 196, 0.429), 70%, rgba(0, 0, 0, 0)), url("portfolio/visdev.jpg");
+    background-image: url("klymenearts.png"), linear-gradient(rgba(81, 125, 196, 0.429), 70%, rgba(0, 0, 0, 0)), url("visdev.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center, center, 50% 80%;
     background-size: 30%, cover, cover;
