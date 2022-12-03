@@ -1,0 +1,53 @@
+
+public class textbox : MonoBehaviour
+{
+    private Animator textanimator;
+    private GameObject temp;
+    public Text textie;
+    public GameObject sophiatextbox, ameliatextbox, directions;
+    public bool spawnanother = false;
+    private Vector3 spawnpoint;
+    private string person, speech;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        temp = null;
+    }
+
+    void Update() {
+        if (temp != null && Input.GetMouseButton(1)) {
+            delete();
+            StartCoroutine(count());
+        }
+    }
+
+    public void spawntext(Vector3 spawnpnt, string p, string text) {
+
+        spawnanother = false;
+        assignParameters(spawnpnt, p, text);
+    
+        if (temp != null) {
+            delete();
+        }
+
+        spawn();
+
+    }
+
+    private void spawn() {
+        if (person == "amelia") {
+            temp = Instantiate(ameliatextbox, spawnpoint, Quaternion.identity);
+        }
+        else if (person == "sophia") {
+            temp = Instantiate(sophiatextbox, spawnpoint, Quaternion.identity);
+        }
+        else if (person == "directions") {
+            temp = Instantiate(directions, spawnpoint, Quaternion.identity);
+        }
+
+        textie.text = speech;
+
+        textanimator = temp.GetComponent<Animator>();
+    }
+}

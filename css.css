@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+.header{
+    font-size: 3vw;
+    color:rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2vw;
+    color:rgb(254, 227, 242);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.block {
+    color: black; 
+    padding-left: 3vw;
+    padding-bottom: 3vw;
+}
+
+.list {
+    list-style:square; 
+    margin: 0;
+}
+
+#contentBox {
+    background-image: linear-gradient(rgba(23, 21, 25, 0.701), 70%, rgba(0, 0, 0, 0)), url('portfolio/recoloredmultiple.png');
+    min-height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+}
+
+#scrollOpacity {
+    width:100%;
+    min-height:80vh;
+    z-index: 0;
+    background-color: rgb(153, 208, 247);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+#introduction {
+    position: relative;
+    text-align: center;
+}
+
+
+#box2 {
+    opacity:0.9;
+    height:auto;
+    background-image: url("contacts.png");
+    background-position: bottom center;
+    font-size:20px;
+}
+
+.title {
+    font-size: 5vw;
+    color:aliceblue;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#csButton:hover {
+    background-image: url("computer.gif");
+}
+
+#projects {
+    position:relative;
+    width: 100%;
+    background-image:linear-gradient(to top, rgb(198, 235, 255), rgba(0, 0, 0, 0)), url("linksbackground.png");
+    background-size:cover;
+    background-position: center bottom;
+    border:0;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 1vw;
+}
+
+.tab2 {
+    display: inline-block;
+    margin-left: 2vw;
+}
+
+@media screen and (max-width: 414px) {
+   #contentBox {
+        min-height: 50vh;
+   }
+   .title {
+        font-size: 10vw;
+   }
+   .text {
+        font-size: 2.4vw;
+   }
+   .header {
+        font-size: 6vw;
+   }
+}
+
+@media screen and (min-width: 415px) and (max-width: 830px) {
+   
+
+}
+
+@media screen and (min-width: 831px) {
+
+
+}
+  
+
