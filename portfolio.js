@@ -1,8 +1,8 @@
-var character = ["fullbody.jpeg", "character1.jpg", "character3.jpg", "character2.jpg", "character4.jpg", "character5.jpg", 0]
-var threed = ["3d1.jpg", "3d2.jpg", "angledbedroom.jpg", 0]
-var prop = ["prop1.jpg", "prop2.jpg", 0]
-var visdev = ["recoloredmultiple.png", "visdev1.jpg", "visdev2.jpg", "visdev3.jpg", "space.jpg", 0]
-var environment = ["treeoflife.png", "promoFinal.jpg", "buildings.png", "visdev.jpg", "background.png", 0]
+var character = ["fullbody.jpeg", "character1.jpg", "character3.jpg", "character2.jpg", "character4.jpg", "character5.jpg"]
+var threed = ["3d1.jpg", "3d2.jpg", "angledbedroom.jpg"]
+var prop = ["prop1.jpg", "prop2.jpg"]
+var visdev = ["recoloredmultiple.png", "visdev1.jpg", "visdev2.jpg", "visdev3.jpg", "space.jpg"]
+var environment = ["treeoflife.png", "promoFinal.jpg", "buildings.png", "visdev.jpg", "background.png"]
 var slideshow = document.getElementById("slideshow");
 var map = {"charDesign": character, "3d": threed, "props":prop, "visdev":visdev, "env":environment};
 var choice = "charDesign";
