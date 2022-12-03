@@ -17,24 +17,19 @@ function changeCategory(category) {
 }
 
 function changeSlide(direction) {
-    let len = map[choice].length;
-    var index;
+    let length = map[choice].length;
+    let index = map[choice].indexOf(slideshow.getAttribute('src').toString());
     if (direction) {
-        index = map[choice][len - 1]++;
         index++;
-        if (index >= len - 1) {
-            index = 0;
-            map[choice][len - 1] = 0;
-        }
     }
     else {
-        index = map[choice][len - 1]--;
         index--;
-        if (index < 0) {
-            index = len - 2;
-            map[choice][len - 1] = len - 2;
-        }
     }
-    slideshow.src = map[choice][index];  
+    if (index < 0) {
+        index = length - 1;
+    }
+    else if (index >= length) {
+        index = 0;
+    }
+    slideshow.src = map[choice][index];
 }
-
