@@ -66,7 +66,7 @@ function changeCategory(category) {
     document.getElementById(choice).style.textDecoration = "initial";
     document.getElementById(category).style.textDecoration = "overline";
     choice = category;
-    slideshow.src = "portfolio/" + map.get(choice)[0];
+    slideshow.src = map.get(choice)[0];
 }
 
 function changeSlide(direction) {
